@@ -1,0 +1,18 @@
+{
+  "name": "Jonathan Ashby",
+  "email": "jashbydev@gmail.com",
+  "skills": [
+    { "type":"PLang", "name": "Javascript" },
+    { "type":"PLang", "name": "React" },
+    { "type":"PLang", "name": "Next.js" },
+    { "type":"PLang", "name": "Node.js" },
+    { "type":"PLang", "name": "CSS" },
+    { "type":"PLang", "name": "HTML" },
+    { "type":"Plang", "name": "MongoDB" },
+
+    { "type":"Tool", "name": "VSCode" },
+    { "type":"Tool", "name": "Photoshop" },
+    { "type":"Tool", "name": "Dreamweaver" },
+    { "type":"Tool", "name": "Figma" }
+  ]
+}

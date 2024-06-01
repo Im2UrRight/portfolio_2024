@@ -1,0 +1,46 @@
+- .eslintrc.json
+- .gitignore
+- app
+  - about
+    - page.tsx
+  - api
+    - contact.ts
+  - components
+    - ContactForm.tsx
+  - contact
+    - page.tsx
+  - favicon.ico
+  - globals.css
+  - layout.tsx
+  - page.module.css
+  - page.tsx
+  - projects
+  - server.js
+- next-env.d.ts
+- next.config.js
+- package-lock.json
+- package.json
+- process.env
+- public
+  - Fran_and_Pepper
+    - 1 - GZoLDCV.jpg
+    - 10 - jpxDjFy.jpg
+    - 11 - HJRZ2cu.jpg
+    - 12 - zCqt2P7.jpg
+    - 13 - EmGz52i.jpg
+    - 14 - vJocys6.jpg
+    - 15 - r3cgjCk.jpg
+    - 2 - C9KuU5J.jpg
+    - 3 - JGPL39L.jpg
+    - 4 - cHtITQQ.jpg
+    - 5 - R7mzEHB.jpg
+    - 6 - 6uFWJAd.jpg
+    - 7 - 5K44GRC.jpg
+    - 8 - Ldhr0AH.jpg
+    - 9 - ktV5INO.jpg
+  - Project_Images
+    - APOD_Final.png
+    - DS3_Startpage.png
+    - PH.png
+- README.md
+- tsconfig.json

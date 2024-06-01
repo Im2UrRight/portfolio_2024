@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+* {
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+:root {
+  --text: #e7e9e9;
+  --background: #181a1b;
+  --primary: #899294;
+  --secondary: #1b1d1d;
+  --accent: #7c8688;
+  --warning: #d49c00;
+  --error: #ca0000;
+  font-family: 'Inter', Helvetica, sans-serif;
+  /*
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  */
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter';
+  font-weight: 400;
+}
+/*-------------------------------*/
+/* general - text */
+/*-------------------------------*/
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 3.366rem; /* 53.92px */}
+
+h2 {font-size: 2.525rem; /* 40.32px */}
+
+h3 {font-size: 1.894rem; /* 30.24px */}
+
+h4 {font-size: 1.421rem; /* 22.72px */}
+
+h5 {font-size: 1.066rem; /* 17.12px */}
+
+small {font-size: 0.600rem; /* 9.6px */}
+
+p {max-width: 80ch;}
+a {
+  color: var(--accent);
+}
+a:hover {
+ color: var(--text);
+}
+a:visited {
+  color: #cacaca;
+}
+.warning_message {
+  color: var(--warning);
+}
+.error_message {
+  color: var(--error);
+}
+button, input[type="submit"] {
+  font-family: 'Inter', Helvetica, sans-serif;
+  font-weight: 400;
+}
+/*-------------------------------*/
+/* Header */
+/*-------------------------------*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+header h1 {
+  margin:10px 20px;
+  margin-left: 4%;
+  white-space: nowrap;
+  min-width: fit-content;
+  flex: 1;
+}
+header nav{
+  margin: auto 0;
+}
+nav ul{
+  display: flex;
+  margin-top: 8px;
+}
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+nav li:last-child {
+  margin-right: 2em;
+}
+nav li a, nav li a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+nav li a:hover, nav li a:active {
+  color: var(--text);
+  border-bottom: #fff 1px solid;
+}
+/*-------------------------------*/
+/* general - main */
+/*-------------------------------*/
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+/*-------------------------------*/
+/* about */
+/*-------------------------------*/
+.about h2 {
+  /* outline: 1px solid #fff; */
+  width:100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.tab-selector a {
+  color: var(--primary);
+}
+.tab-selector a.selected, .tab-selector a:hover {
+  color: var(--text)
+}
+/*-------------------------------*/
+/* about - cats */
+/*-------------------------------*/
+.about-cats.tab {
+  position: relative;
+}
+.about-cats.tab:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Fran_and_Pepper/14.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45%;
+  opacity: 0.2;
+  z-index: -1;
+}
+.intro-pics {
+  display: flex;
+  justify-content: space-around;
+}
+.intro-pics img {
+  width: 31%;
+  object-fit: cover;
+}
+/*-------------------------------*/
+/* gallery */
+/*-------------------------------*/
+.gallery {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-flow,  minmax(350px, 1fr) );
+  grid-gap: 10px; */
+}
+.gallery-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  min-width: 350px;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+.gallery-card:hover img{
+  transform: scale(1.1);
+}
+.gallery-card img {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+.card-details {
+  background: rgb(110,110,110);
+  background: linear-gradient(180deg, rgba(53, 53, 53, 0.767) 0%, rgb(19, 19, 19) 100%);
+  width: 100%;
+  max-height: 70%;
+  padding: 0px 1rem 8px 1rem;
+  position: absolute;
+  bottom: 0;
+  }
+.gallery-card a {
+    text-decoration: none;
+  }
+.gallery-card h3 {
+  font-size: 1.25rem;
+  margin: 8px 0;
+}
+.gallery-card p {
+  font-size: .85rem;
+  margin: 8px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+.tag {
+  background-color: var(--accent);
+  display: inline;
+  font-size: 0.7rem;
+  list-style: none;
+  margin: 2px;
+  padding: 2px;
+  color: #1d1d1d;
+}
+/*-------------------------------*/
+/* contact form */
+/*-------------------------------*/
+.contact-form {
+  border: solid 5px var(--accent);
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 10px 2% 10px 2%;
+}
+.contact-form label,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+  background-color: var(--background);
+  border: 3px var(--accent)solid;
+  border-radius: 5px;
+  color: var(--text);
+  display: block;
+  
+  padding: 5px;
+}
+.contact-form button {
+  margin-left: 80%;
+  padding: 5px;
+  text-transform: uppercase;
+}
+/*-------------------------------*/
+/* contact form */
+/*-------------------------------*/
+footer {
+  position: absolute;
+  border-top: var(--accent);
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+.footer-control {
+  padding-bottom: 200px;
+}
+.to_top {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 10px;
+}
