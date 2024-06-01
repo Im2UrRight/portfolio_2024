@@ -7,7 +7,7 @@ import GalleryCard from './GalleryCard';
 const Gallery: React.FC = () => {
   return (
     <div className='gallery'>
-
+      
     </div>
   )
 }

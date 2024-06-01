@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FaSquareGithub, FaSquareXTwitter, FaLinkedin, FaFilePdf, FaLocationDot } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
 const Footer: React.FC = () => {
   return (
     <footer>
@@ -12,7 +13,7 @@ const Footer: React.FC = () => {
       </div>
       <div>
         <p><FaLocationDot /> Gonzales, LA</p>
-        <a href="mailto:jashbydev@gmail.com">Email</a>
+        <a href="mailto:jashbydev@gmail.com"><IoMail /> Email</a>
         <a href=""><FaFilePdf /> Resume</a>
       </div>
     </footer>
