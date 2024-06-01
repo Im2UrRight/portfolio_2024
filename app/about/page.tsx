@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import AboutCats from '../components/AboutCats';
 import AboutMe from '../components/AboutMe';
+import Footer from '../components/Footer';
 const About: React.FC = () => {
 
 
@@ -20,6 +21,7 @@ const About: React.FC = () => {
         <AboutMe /> 
         {/* <AboutCats /> */}
       </main>
+      <Footer />
     </>
   );
 };
